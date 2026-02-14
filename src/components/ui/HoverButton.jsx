@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { gsap } from "gsap";
 
-export default function HoverButton({ children, className = "" }) {
+export default function HoverButton({ children, className = "", ...props }) {
     const buttonRef = useRef(null);
     const fillRef = useRef(null);
     const textRef = useRef(null);
@@ -53,6 +53,7 @@ export default function HoverButton({ children, className = "" }) {
             ref={buttonRef}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            {...props}
             className={`relative overflow-hidden px-8 py-3 bg-white text-black font-bold uppercase tracking-widest border border-white transition-colors duration-300 ${className}`}
         >
             <span

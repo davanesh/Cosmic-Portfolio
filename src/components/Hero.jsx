@@ -17,7 +17,7 @@ export default function Hero1() {
                     Cosmic Portfolio
                 </h1>
                 <p className="mt-4 text-xl text-gray-200 max-w-2xl">
-                    Exploring the universe of code.
+                    Davanesh Saminathan
                 </p>
             </div>
         </div>
