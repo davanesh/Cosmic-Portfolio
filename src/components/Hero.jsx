@@ -3,11 +3,7 @@ import blackholeVideo from "../assets/blackhole.webm";
 export default function Hero1() {
     return (
         <div className="relative flex flex-col h-screen w-full overflow-hidden">
-            <video
-                autoPlay
-                muted
-                loop
-                playsInline
+            <video autoPlay muted loop playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover"
             >
                 <source src={blackholeVideo} type="video/webm" />
