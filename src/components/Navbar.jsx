@@ -7,10 +7,10 @@ gsap.registerPlugin(ScrollToPlugin);
 
 function Navbar() {
   const links = [
-    { name: "About", href: "#" },
+    { name: "About", target: "/" },
     { name: "Projects", target: "#projects" },
     { name: "Contact", href: "#" },
-    { name: "Resume", href: "#" },
+    { name: "Resume", target: "#resume" },
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState(null);

@@ -97,7 +97,7 @@ export default function Project() {
     }, []);
 
     return (
-        <section id="projects" ref={containerRef} className="relative h-screen w-full overflow-hidden bg-black text-white">
+        <section id="projects" ref={containerRef} className="relative h-screen w-full overflow-hidden text-white">
             {/* Background Grid/Stars */}
             <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:20px_20px] opacity-20 pointer-events-none"></div>
 
