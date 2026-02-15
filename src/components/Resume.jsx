@@ -58,7 +58,7 @@ export default function Resume() {
     return (
         <section id="resume" className="relative py-24 w-full text-white flex flex-col items-center justify-center overflow-hidden">
             {/* Background Effects */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black opacity-50 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-purple-900/20 via-black to-black opacity-50 pointer-events-none"></div>
 
             <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-widest uppercase bg-linear-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-12">

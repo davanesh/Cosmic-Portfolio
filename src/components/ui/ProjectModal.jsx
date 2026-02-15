@@ -11,7 +11,7 @@ export default function ProjectModal({ activeProject, onClose }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 pt-24 md:p-12 md:pt-28"
+            className="fixed inset-0 -z-60 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 pt-24 md:p-12 md:pt-28"
             onClick={onClose}
         >
             <motion.div
@@ -31,7 +31,7 @@ export default function ProjectModal({ activeProject, onClose }) {
 
                     <div className="flex-1 text-center mx-4 overflow-hidden">
                         <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400 font-mono max-w-md w-full justify-center truncate">
-                            🔒 {activeProject.link}
+                            {activeProject.link}
                         </div>
                     </div>
 
@@ -79,7 +79,7 @@ export default function ProjectModal({ activeProject, onClose }) {
                 <div className="flex-1 bg-white relative overflow-hidden">
                     {isMobileApp ? (
                         <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#1a1a1a] text-white">
-                            <div className="w-16 h-16 mb-6 p-4 rounded-2xl bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-purple-500/20">
+                            <div className="w-16 h-16 mb-6 p-4 rounded-2xl bg-linear-to-br from-purple-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-purple-500/20">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
                                     <line x1="12" y1="18" x2="12.01" y2="18"></line>

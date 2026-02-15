@@ -4,12 +4,11 @@ export default function Hero1() {
     return (
         <div className="relative flex flex-col h-screen w-full overflow-hidden">
             <video autoPlay muted loop playsInline
-                className="absolute top-0 left-0 w-full h-full object-cover z-[-10]"
+                className="absolute top-0 left-0 w-full h-full object-cover -z-10"
             >
                 <source src={blackholeVideo} type="video/webm" />
             </video>
 
-            {/* Overlay for content readability if needed */}
             <div className="absolute inset-0 bg-black/40 z-10"></div>
 
             <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">

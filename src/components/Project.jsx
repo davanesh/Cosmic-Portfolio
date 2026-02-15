@@ -99,10 +99,10 @@ export default function Project() {
     return (
         <section id="projects" ref={containerRef} className="relative h-screen w-full overflow-hidden text-white">
             {/* Background Grid/Stars */}
-            <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:20px_20px] opacity-20 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] bg-size-[20px_20px] opacity-20 pointer-events-none"></div>
 
             <div className="absolute top-24 left-10 z-10">
-                <h2 className="text-3xl md:text-5xl font-bold tracking-widest uppercase bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                <h2 className="text-3xl md:text-5xl font-bold tracking-widest uppercase bg-linear-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
                     Projects
                 </h2>
                 <p className="text-purple-300 text-sm tracking-[0.3em] mt-2 uppercase">
@@ -116,7 +116,7 @@ export default function Project() {
                 style={{ width: `${projects.length * 100}%` }}
             >
                 {projects.map((project, index) => (
-                    <div key={index} className="w-screen h-full flex items-center justify-center p-10 pt-40 flex-shrink-0">
+                    <div key={index} className="w-screen h-full flex items-center justify-center p-10 pt-40 shrink-0">
 
                         {/* Project Card */}
                         <div className="relative group w-full max-w-4xl h-[60vh] bg-black/40 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-md hover:border-purple-500/50 transition-colors duration-500">

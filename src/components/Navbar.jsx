@@ -29,7 +29,7 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur-md bg-black/20 border-b border-white/10">
       {/* Logo Area */}
       <div className="flex flex-col items-center cursor-pointer" onClick={() => gsap.to(window, { duration: 1, scrollTo: 0, ease: "power2.inOut" })}>
-        <span className="text-2xl font-bold tracking-widest uppercase bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">
+        <span className="text-2xl font-bold tracking-widest uppercase bg-linear-to-r from-purple-400 to-white bg-clip-text text-transparent">
           Davanesh
         </span>
         <span className="text-xs font-semibold tracking-[0.45em] text-purple-400 uppercase">
