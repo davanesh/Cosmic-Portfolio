@@ -61,22 +61,17 @@ export default function Resume() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-purple-900/20 via-black to-black opacity-50 pointer-events-none"></div>
 
             <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-                <h2 className="text-3xl md:text-5xl font-bold tracking-widest uppercase bg-linear-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-12">
-                    About Me
-                </h2>
-
                 <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12 shadow-2xl shadow-purple-900/10">
                     <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8">
-                        I am a passionate Full Stack Developer with a deep love for building scalable, high-performance web applications.
-                        With a strong foundation in modern technologies like React, Node.js, and Cloud Computing, I strive to create
-                        immersive user experiences that solve real-world problems.
+                        I’m a Full Stack Developer focused on building scalable, real-world applications that solve meaningful problems. 
+                        From AI-powered workflow automation to real-time emergency response systems, I enjoy transforming complex ideas 
+                        into reliable and intuitive digital experiences.
                     </p>
                     <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-12">
-                        My journey in tech is driven by curiosity and a relentless pursuit of excellence. Whether it's architecting
-                        complex backends or crafting pixel-perfect frontends, I approach every project with a focus on code quality,
-                        performance, and user-centric design.
+                        Beyond projects, I actively strengthen my problem-solving skills through data structures and algorithms practice, 
+                        regularly solving LeetCode challenges and exploring system design concepts to write efficient, maintainable, 
+                        and production-ready code.
                     </p>
-
                     <div className="flex justify-center">
                         <HoverButton
                             onClick={handleDownload}
