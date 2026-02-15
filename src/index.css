@@ -3,3 +3,17 @@
 body {
     background-color: black;
 }
+
+@keyframes scan-line {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.animate-scan-line {
+    animation: scan-line 8s linear infinite;
+}
