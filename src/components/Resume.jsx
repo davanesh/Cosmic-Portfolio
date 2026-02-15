@@ -43,7 +43,7 @@ export default function Resume() {
 
                             // Trigger actual file download
                             const link = document.createElement('a');
-                            link.href = "/resume.pdf";
+                            link.href = "/Davanesh_Resume.pdf";
                             link.download = "Davanesh_Saminathan_Resume.pdf";
                             document.body.appendChild(link);
                             link.click();
@@ -63,13 +63,13 @@ export default function Resume() {
             <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
                 <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12 shadow-2xl shadow-purple-900/10">
                     <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8">
-                        I’m a Full Stack Developer focused on building scalable, real-world applications that solve meaningful problems. 
-                        From AI-powered workflow automation to real-time emergency response systems, I enjoy transforming complex ideas 
+                        I’m a Full Stack Developer focused on building scalable, real-world applications that solve meaningful problems.
+                        From AI-powered workflow automation to real-time emergency response systems, I enjoy transforming complex ideas
                         into reliable and intuitive digital experiences.
                     </p>
                     <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-12">
-                        Beyond projects, I actively strengthen my problem-solving skills through data structures and algorithms practice, 
-                        regularly solving LeetCode challenges and exploring system design concepts to write efficient, maintainable, 
+                        Beyond projects, I actively strengthen my problem-solving skills through data structures and algorithms practice,
+                        regularly solving LeetCode challenges and exploring system design concepts to write efficient, maintainable,
                         and production-ready code.
                     </p>
                     <div className="flex justify-center">
