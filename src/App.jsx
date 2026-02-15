@@ -5,6 +5,7 @@ import Resume from "./components/Resume";
 import StarsCanvas from "./components/ui/Stars";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <Project />
+      <Contact />
       <Resume />
       <Footer />
     </div>
