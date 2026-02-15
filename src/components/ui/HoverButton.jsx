@@ -19,12 +19,13 @@ export default function HoverButton({ children, className = "", ...props }) {
         gsap.set(fill, { x, y, scale: 0, opacity: 1 });
 
         gsap.to(fill, {
-            scale: 25,
-            duration: 0.5,
+            scale: 40,
+            duration: 0.3,
             ease: "power2.out",
+            overwrite: "auto"
         });
 
-        gsap.to(textRef.current, { color: "#ffffff", duration: 0.3 });
+        gsap.to(textRef.current, { color: "#ffffff", duration: 0.15, overwrite: "auto" });
     };
 
     const handleMouseLeave = (e) => {
@@ -41,11 +42,13 @@ export default function HoverButton({ children, className = "", ...props }) {
             x,
             y,
             scale: 0,
-            duration: 0.4,
+            duration: 0.3,
             ease: "power2.in",
+            overwrite: "auto",
+            onComplete: () => gsap.set(fill, { opacity: 0 })
         });
 
-        gsap.to(textRef.current, { color: "#000000", duration: 0.3 });
+        gsap.to(textRef.current, { color: "#000000", duration: 0.2, overwrite: "auto" });
     };
 
     return (

@@ -61,7 +61,7 @@ export default function Loader({ onComplete }) {
     return (
         <div
             ref={containerRef}
-            className="fixed inset-0 z-[9999] flex items-center justify-center bg-black overflow-hidden pointer-events-none"
+            className="fixed inset-0 z-9999 flex items-center justify-center bg-black overflow-hidden pointer-events-none"
         >
             {/* Pixel Grid */}
             <div className="absolute inset-0 grid grid-cols-10 grid-rows-10 w-full h-full">

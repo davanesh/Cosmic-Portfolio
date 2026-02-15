@@ -99,9 +99,9 @@ export default function Project() {
     return (
         <section id="projects" ref={containerRef} className="relative h-screen w-full overflow-hidden text-white">
             {/* Background Grid/Stars */}
-            <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] bg-size-[20px_20px] opacity-20 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] bg-size-[20px_20px] opacity-20 pointer-events-none z-10"></div>
 
-            <div className="absolute top-24 left-10 z-10">
+            <div className="absolute top-24 left-10 z-30">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-widest uppercase bg-linear-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
                     Projects
                 </h2>
@@ -145,7 +145,7 @@ export default function Project() {
                             </div>
 
                             {/* Content */}
-                            <div className="absolute bottom-0 left-0 p-8 md:p-12 w-full">
+                            <div className="absolute bottom-0 left-0 p-8 md:p-12 w-full z-30">
                                 <div className="flex gap-4 mb-4">
                                     {project.tech.map((t, i) => (
                                         <span key={i} className="px-3 py-1 text-xs font-mono text-cyan-300 border border-cyan-500/30 rounded-full bg-cyan-900/20 backdrop-blur-sm">
