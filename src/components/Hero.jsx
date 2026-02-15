@@ -31,28 +31,28 @@ export default function Hero() {
         <div id="about" ref={container} className="relative flex flex-col h-screen w-full overflow-hidden font-mono selection:bg-purple-500/30">
             {/* Background Video */}
             <video autoPlay muted loop playsInline
-                className="absolute -top-2 left-0 w-full h-[110%] object-cover z-10 opacity-100"
+                className="absolute -top-2 left-0 w-full h-[110%] object-cover z-0 opacity-100"
             >
                 <source src={blackholeVideo} type="video/webm" />
             </video>
 
             {/* Main Overlay */}
-            <div className="absolute inset-0 bg-black/40 z-15"></div>
+            <div className="absolute inset-0 bg-black/40 z-5"></div>
 
             {/* Scan Line & Noise Overlay */}
-            <div className="absolute inset-0 z-15 pointer-events-none opacity-10">
+            <div className="absolute inset-0 -z-5 pointer-events-none opacity-10">
                 <div className="absolute w-full h-px bg-white/10 blur-[0.5px] animate-scan-line"></div>
                 <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay"></div>
             </div>
 
             {/* Content Layout */}
-            <div className="relative z-30 h-full w-full flex flex-col justify-start p-8 md:p-16 space-y-12">
-                <div className="mt-20">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter uppercase hud-element mb-4">
+            <div className="relative z-30 h-full w-full flex flex-col justify-start p-6 md:p-16 space-y-8 md:space-y-12">
+                <div className="mt-24 md:mt-20">
+                    <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tighter uppercase hud-element mb-4">
                         About <span className="text-purple-400">Me</span>
                     </h2>
                     <div className="max-w-md hud-element">
-                        <p className="text-gray-400 text-sm md:text-base leading-relaxed border-l-2 border-purple-400 pl-4">
+                        <p className="text-gray-400 text-xs md:text-sm lg:text-base leading-relaxed border-l-2 border-purple-400 pl-4">
                             Full-stack developer focused on performance and scalability, crafting meaningful digital systems with modern web technologies to solve real-world problems.
                         </p>
                     </div>

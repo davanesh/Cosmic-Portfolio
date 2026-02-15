@@ -38,7 +38,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="relative py-24 px-6 md:px-16 overflow-hidden font-mono">
+        <section id="contact" className="relative py-24 px-4 md:px-16 overflow-hidden font-mono">
             {/* Background Accent */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/5 blur-[120px] rounded-full pointer-events-none" />
 
@@ -49,7 +49,7 @@ export default function Contact() {
                         <div className="w-12 h-px bg-purple-500" />
                         <span className="text-purple-400 text-xs tracking-[0.5em] uppercase">Communication_Link</span>
                     </div>
-                    <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter uppercase">
                         Get In <span className="text-purple-500">Touch</span>
                     </h2>
                 </div>

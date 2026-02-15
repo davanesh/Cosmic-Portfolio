@@ -116,10 +116,10 @@ export default function Project() {
                 style={{ width: `${projects.length * 100}%` }}
             >
                 {projects.map((project, index) => (
-                    <div key={index} className="w-screen h-full flex items-center justify-center p-10 pt-40 shrink-0">
+                    <div key={index} className="w-screen h-full flex items-center justify-center p-4 sm:p-10 pt-32 md:pt-40 shrink-0">
 
                         {/* Project Card */}
-                        <div className="relative group w-full max-w-4xl h-[60vh] bg-black/40 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-md hover:border-purple-500/50 transition-colors duration-500">
+                        <div className="relative group w-full max-w-4xl h-[65vh] md:h-[60vh] bg-black/40 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-md hover:border-purple-500/50 transition-colors duration-500">
 
                             {/* Image Background */}
                             <div className="absolute inset-0">
@@ -138,33 +138,35 @@ export default function Project() {
                                     className="absolute top-4 right-4 z-20 p-2 bg-black/50 hover:bg-white/20 rounded-full text-white/50 hover:text-white transition-all duration-300 backdrop-blur-sm"
                                     title="View Source Code"
                                 >
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="md:w-[30px] md:h-[30px]">
                                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                                     </svg>
                                 </a>
                             </div>
 
                             {/* Content */}
-                            <div className="absolute bottom-0 left-0 p-8 md:p-12 w-full z-30">
-                                <div className="flex gap-4 mb-4">
+                            <div className="absolute bottom-0 left-0 p-6 md:p-12 w-full z-30">
+                                <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tech.map((t, i) => (
-                                        <span key={i} className="px-3 py-1 text-xs font-mono text-cyan-300 border border-cyan-500/30 rounded-full bg-cyan-900/20 backdrop-blur-sm">
+                                        <span key={i} className="px-2 py-0.5 md:px-3 md:py-1 text-[10px] md:text-xs font-mono text-cyan-300 border border-cyan-500/30 rounded-full bg-cyan-900/20 backdrop-blur-sm">
                                             {t}
                                         </span>
                                     ))}
                                 </div>
 
-                                <h3 className="text-3xl md:text-5xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">
+                                <h3 className="text-2xl md:text-5xl font-bold text-white mb-2 md:mb-4 group-hover:text-purple-300 transition-colors truncate">
                                     {project.title}
                                 </h3>
 
-                                <p className="text-gray-300 max-w-xl text-lg mb-8 line-clamp-2 md:line-clamp-none">
+                                <p className="text-gray-300 max-w-xl text-sm md:text-lg mb-6 md:mb-8 line-clamp-3 md:line-clamp-none leading-relaxed">
                                     {project.description}
                                 </p>
 
-                                <HoverButton className="rounded-full" onClick={() => setActiveProject(project)}>
-                                    View Project
-                                </HoverButton>
+                                <div className="flex">
+                                    <HoverButton className="rounded-full text-xs md:text-base px-6 py-2 md:px-8 md:py-3" onClick={() => setActiveProject(project)}>
+                                        View Project
+                                    </HoverButton>
+                                </div>
                             </div>
                         </div>
                     </div>

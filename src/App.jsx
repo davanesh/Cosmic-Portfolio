@@ -2,6 +2,7 @@ import { useState } from "react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
+import TechStack from "./components/TechStack";
 import Resume from "./components/Resume";
 import StarsCanvas from "./components/ui/Stars";
 import Social from "./components/Social";
@@ -13,7 +14,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="text-white relative">
+    <div className="bg-black text-white relative">
       <StarsCanvas />
       {loading && <Loader onComplete={() => setLoading(false)} />}
       <div className={`${loading ? "opacity-0" : "opacity-100"} transition-opacity duration-500`}>
@@ -21,6 +22,7 @@ function App() {
         <Navbar />
         <Hero />
         <Project />
+        <TechStack />
         <Contact />
         <Resume />
         <Footer />

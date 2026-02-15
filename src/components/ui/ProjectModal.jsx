@@ -18,7 +18,7 @@ export default function ProjectModal({ activeProject, onClose }) {
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.9, opacity: 0 }}
-                className="relative w-full h-full max-w-5xl max-h-[80vh] bg-[#1a1a1a] border border-white/10 rounded-2xl overflow-hidden flex flex-col shadow-2xl shadow-purple-900/20"
+                className="relative w-full h-full max-w-5xl max-h-[90vh] md:max-h-[80vh] bg-[#1a1a1a] border border-white/10 rounded-2xl overflow-hidden flex flex-col shadow-2xl shadow-purple-900/20"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Browser Header */}
