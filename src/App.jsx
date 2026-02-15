@@ -14,7 +14,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="bg-black text-white relative">
+    <div className="bg-black text-white relative overflow-x-hidden">
       <StarsCanvas />
       {loading && <Loader onComplete={() => setLoading(false)} />}
       <div className={`${loading ? "opacity-0" : "opacity-100"} transition-opacity duration-500`}>

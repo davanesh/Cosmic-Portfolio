@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { AnimatePresence, motion } from "framer-motion";
 import HoverButton from "./ui/HoverButton";
 import ProjectModal from "./ui/ProjectModal";
+import autoflowImg from "../assets/autoflow.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,7 +13,7 @@ const projects = [
         title: "AutoFlow.AI",
         description:
             "An intelligent workflow orchestration platform that automates complex business processes using AI-driven optimization and microservices architecture.",
-        image: "src/assets/autoflow.png",
+        image: autoflowImg,
         tech: ["Go", "AWS", "React", "TailwindCSS", "Omalla-AI"],
         link: "https://github.com/davanesh/autoFlow",
         github: "https://github.com/davanesh/autoFlow",
@@ -99,7 +100,7 @@ export default function Project() {
     return (
         <section id="projects" ref={containerRef} className="relative h-screen w-full overflow-hidden text-white">
             {/* Background Grid/Stars */}
-            <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] bg-size-[20px_20px] opacity-20 pointer-events-none z-10"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] bg-size-[20px_20px] opacity-20 pointer-events-none z-0"></div>
 
             <div className="absolute top-24 left-10 z-30">
                 <h2 className="text-3xl md:text-5xl font-bold tracking-widest uppercase bg-linear-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">

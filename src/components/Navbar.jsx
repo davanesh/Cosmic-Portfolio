@@ -67,7 +67,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu Toggle */}
-      <div className="md:hidden relative z-50">
+      <div className="md:hidden relative z-110">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-white focus:outline-none p-2"

@@ -76,7 +76,7 @@ export default function ProjectModal({ activeProject, onClose }) {
                 </div>
 
                 {/* Content Area */}
-                <div className="flex-1 bg-white relative overflow-hidden">
+                <div className="flex-1 bg-white relative overflow-y-auto">
                     {isMobileApp ? (
                         <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#1a1a1a] text-white">
                             <div className="w-16 h-16 mb-6 p-4 rounded-2xl bg-linear-to-br from-purple-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-purple-500/20">

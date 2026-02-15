@@ -8,41 +8,41 @@ import {
 } from 'react-icons/si';
 import { FaAws, FaJava } from "react-icons/fa";
 
-const techs = [
+    const techs = [
     // 🌐 Frontend
     { name: "React", icon: SiReact, color: "#61DAFB", level: 90, type: "Library" },
-    { name: "React Native", icon: SiReact, color: "#61DAFB", level: 75, type: "Mobile" },
-    { name: "Vite", icon: SiVite, color: "#646CFF", level: 85, type: "Build Tool" },
-    { name: "TailwindCSS", icon: SiTailwindcss, color: "#38B2AC", level: 95, type: "CSS Framework" },
-    { name: "Three.js", icon: SiThreedotjs, color: "#ffffff", level: 65, type: "3D Graphics" },
-    { name: "Next.js", icon: SiNextdotjs, color: "#ffffff", level: 85, type: "Framework" },
+    { name: "React Native", icon: SiReact, color: "#61DAFB", level: 60, type: "Mobile" },
+    { name: "Vite", icon: SiVite, color: "#646CFF", level: 70, type: "Build Tool" },
+    { name: "TailwindCSS", icon: SiTailwindcss, color: "#06B6D4", level: 80, type: "CSS Framework" },
+    { name: "Three.js", icon: SiThreedotjs, color: "#FFFFFF", level: 65, type: "3D Graphics" },
+    { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF", level: 60, type: "Framework" },
 
     // ⚙️ Backend
-    { name: "Node.js", icon: SiNodedotjs, color: "#339933", level: 85, type: "Runtime" },
-    { name: "Express.js", icon: SiExpress, color: "#ffffff", level: 85, type: "Framework" },
+    { name: "Node.js", icon: SiNodedotjs, color: "#339933", level: 60, type: "Runtime" },
+    { name: "Express.js", icon: SiExpress, color: "#FFFFFF", level: 60, type: "Framework" },
 
     // 🗄️ Databases
-    { name: "MongoDB", icon: SiMongodb, color: "#47A248", level: 80, type: "Database" },
-    { name: "MySQL", icon: SiMysql, color: "#4479A1", level: 70, type: "Database" },
-    { name: "PostgreSQL", icon: SiPostgresql, color: "#ffffff", level: 80, type: "Database" },
+    { name: "MongoDB", icon: SiMongodb, color: "#47A248", level: 60, type: "Database" },
+    { name: "MySQL", icon: SiMysql, color: "#4479A1", level: 80, type: "Database" },
+    { name: "PostgreSQL", icon: SiPostgresql, color: "#336791", level: 60, type: "Database" },
 
     // 💻 Languages
-    { name: "Java", icon: FaJava, color: "#EA2D2E", level: 90, type: "Language" },
-    { name: "Python", icon: SiPython, color: "#ffffff", level: 80, type: "Language" },
+    { name: "Java", icon: FaJava, color: "#ED8B00", level: 90, type: "Language" },
+    { name: "Python", icon: SiPython, color: "#3776AB", level: 80, type: "Language" },
     { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 75, type: "Language" },
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6", level: 60, type: "Language" },
-    { name: "Go", icon: SiGo, color: "#00ADD8", level: 60, type: "Language" },
-    { name: "C", icon: SiC, color: "#00ADD8", level: 50, type: "Language" },
+    { name: "Go", icon: SiGo, color: "#00ADD8", level: 50, type: "Language" },
+    { name: "C", icon: SiC, color: "#A8B9CC", level: 50, type: "Language" },
 
     // 🛠️ Tools & Workflow
     { name: "Git", icon: SiGit, color: "#F05032", level: 90, type: "Version Control" },
-    { name: "GitHub", icon: SiGithub, color: "#ffffff", level: 90, type: "Collaboration" },
+    { name: "GitHub", icon: SiGithub, color: "#FFFFFF", level: 90, type: "Collaboration" },
     { name: "Docker", icon: SiDocker, color: "#2496ED", level: 60, type: "Containerization" },
 
     // ☁️ Cloud & Services
     { name: "AWS", icon: FaAws, color: "#FF9900", level: 70, type: "Cloud" },
-    { name: "Firebase", icon: SiFirebase, color: "#FFCA28", level: 75, type: "BaaS" },
-];
+    { name: "Firebase", icon: SiFirebase, color: "#FFCA28", level: 70, type: "BaaS" },
+    ];
 
 const HUDBracket = () => (
     <div className="absolute inset-0 pointer-events-none opacity-40">
