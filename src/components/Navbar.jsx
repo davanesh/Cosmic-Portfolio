@@ -67,7 +67,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu Toggle */}
-      <div className="md:hidden relative z-[150]">
+      <div className="md:hidden relative z-150">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-white focus:outline-none p-2"
@@ -100,16 +100,16 @@ function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsMenuOpen(false)}
-              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[130] md:hidden"
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-130 md:hidden"
             />
-            
+
             {/* Sidebar content */}
             <motion.div
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 left-0 h-screen w-[280px] bg-[#050505]/95 border-r border-purple-500/30 flex flex-col items-center justify-start pt-32 space-y-8 z-[140] md:hidden overflow-y-auto shadow-[0_0_30px_rgba(168,85,247,0.1)]"
+              className="fixed top-0 left-0 h-screen w-[280px] bg-[#050505]/95 border-r border-purple-500/30 flex flex-col items-center justify-start pt-32 space-y-8 z-140 md:hidden overflow-y-auto shadow-[0_0_30px_rgba(168,85,247,0.1)]"
             >
               {/* HUD Decorative Elements */}
               <div className="absolute inset-0 pointer-events-none">
@@ -129,7 +129,6 @@ function Navbar() {
                   className="text-2xl font-bold uppercase tracking-[0.2em] text-gray-300 hover:text-purple-400 transition-colors relative group"
                 >
                   <span className="relative z-10">{link.name}</span>
-                  <span className="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-purple-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-[0_0_10px_#a855f7]" />
                 </motion.a>
               ))}
 
