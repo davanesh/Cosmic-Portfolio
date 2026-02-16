@@ -1,16 +1,75 @@
-# React + Vite
+# 🌌 Cosmic Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=davanesh.Cosmic-Portfolio)
 
-Currently, two official plugins are available:
+🚀 **Live Website**  
+👉 https://davaneshportfolio.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A futuristic, cosmic-themed developer portfolio designed to showcase real-world projects, modern technologies, and immersive user experiences.
 
-## React Compiler
+Built with performance, scalability, and clean UI/UX in mind.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This portfolio represents my journey as a developer — from mastering fundamentals to building AI-powered systems, real-time applications, and immersive web experiences.
+
+Every animation, interaction, and design decision was crafted intentionally to create a smooth and engaging experience.
+
+> ⭐ For the best experience, view on a larger screen.
+
+---
+
+## 🚀 Features
+
+- 🟣 Cosmic black & purple design theme
+- ⚡ Smooth animations & transitions
+- 📱 Fully responsive layout
+- 🧠 Real-world project showcase
+- 🎯 Performance optimized
+- 🎨 Glassmorphism & modern UI
+- 🔥 Interactive tech stack visualization
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- Three.js
+
+### UI & Animations
+- Framer Motion
+- GSAP
+
+### Deployment
+- Vercel (Global CDN)
+
+---
+
+## ⚙️ Run Locally
+
+Clone the project:
+
+```bash
+git clone https://github.com/davanesh/Cosmic-Portfolio.git
+cd Cosmic-Portfolio
+npm install
+npm run dev
+```
+
+## 👨‍💻 Author
+Davanesh Saminathan
+
+🌐 Portfolio: https://davaneshportfolio.vercel.app
+
+## ⭐ Support
+
+If you like this project:
+
+⭐ Star the repository
+🤝 Share feedback
+🚀 Connect with me
