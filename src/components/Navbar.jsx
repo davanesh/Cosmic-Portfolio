@@ -67,10 +67,11 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu Toggle */}
-      <div className="md:hidden relative z-110">
+      <div className="md:hidden relative z-[150]">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-white focus:outline-none p-2"
+          aria-label="Toggle Menu"
         >
           <div className="w-6 h-5 relative flex flex-col justify-between overflow-hidden">
             <motion.span
@@ -89,47 +90,58 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay & Sidebar */}
       <AnimatePresence>
         {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 bg-black/95 flex flex-col items-center justify-start pt-32 space-y-8 z-100 md:hidden overflow-y-auto"
-          >
-            {/* HUD Decorative Elements */}
-            <div className="absolute inset-0 pointer-events-none">
-              <div className="absolute top-10 left-10 w-20 h-20 border-t-2 border-l-2 border-purple-500/30" />
-              <div className="absolute bottom-10 right-10 w-20 h-20 border-b-2 border-r-2 border-purple-500/30" />
-              <div className="absolute top-1/2 left-0 w-full h-px bg-purple-500/10" />
-              <div className="absolute left-1/2 top-0 w-px h-full bg-purple-500/10" />
-            </div>
-
-            {links.map((link, index) => (
-              <motion.a
-                key={link.name}
-                href={link.href || link.target}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 + 0.2 }}
-                onClick={(e) => link.target ? handleScroll(e, link.target) : null}
-                className="text-2xl font-bold uppercase tracking-[0.2em] text-gray-300 hover:text-purple-400 transition-colors relative group"
-              >
-                <span className="relative z-10">{link.name}</span>
-                <span className="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-purple-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-[0_0_10px_#a855f7]" />
-              </motion.a>
-            ))}
-
+          <>
+            {/* Backdrop Overlay */}
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 0.5 }}
-              className="mt-12 text-[10px] tracking-[0.5em] text-purple-400 uppercase font-mono pb-20"
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsMenuOpen(false)}
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[130] md:hidden"
+            />
+            
+            {/* Sidebar content */}
+            <motion.div
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className="fixed top-0 left-0 h-screen w-[280px] bg-[#050505]/95 border-r border-purple-500/30 flex flex-col items-center justify-start pt-32 space-y-8 z-[140] md:hidden overflow-y-auto shadow-[0_0_30px_rgba(168,85,247,0.1)]"
             >
-              System Online // Rev 4.0
+              {/* HUD Decorative Elements */}
+              <div className="absolute inset-0 pointer-events-none">
+                <div className="absolute top-10 left-10 w-20 h-20 border-t-2 border-l-2 border-purple-500/30" />
+                <div className="absolute bottom-10 right-10 w-20 h-20 border-b-2 border-r-2 border-purple-500/30" />
+                <div className="absolute top-1/2 left-0 w-full h-px bg-purple-500/10" />
+              </div>
+
+              {links.map((link, index) => (
+                <motion.a
+                  key={link.name}
+                  href={link.href || link.target}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.1 + 0.2 }}
+                  onClick={(e) => link.target ? handleScroll(e, link.target) : null}
+                  className="text-2xl font-bold uppercase tracking-[0.2em] text-gray-300 hover:text-purple-400 transition-colors relative group"
+                >
+                  <span className="relative z-10">{link.name}</span>
+                  <span className="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-purple-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-[0_0_10px_#a855f7]" />
+                </motion.a>
+              ))}
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.5 }}
+                className="mt-auto mb-10 text-[10px] tracking-[0.5em] text-purple-400 uppercase font-mono px-4 text-center"
+              >
+                System Online // Rev 4.0
+              </motion.div>
             </motion.div>
-          </motion.div>
+          </>
         )}
       </AnimatePresence>
     </nav>
