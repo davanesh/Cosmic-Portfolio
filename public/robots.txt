@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davaneshportfolio.vercel.app/sitemap.xml

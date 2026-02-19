@@ -48,9 +48,9 @@ export default function Hero() {
             {/* Content Layout */}
             <div className="relative z-30 h-full w-full flex flex-col justify-start p-6 md:p-16 space-y-8 md:space-y-12">
                 <div className="mt-24 md:mt-20">
-                    <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tighter uppercase hud-element mb-4">
+                    <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tighter uppercase hud-element mb-4">
                         About <span className="text-purple-400">Me</span>
-                    </h2>
+                    </h1>
                     <div className="max-w-md hud-element">
                         <p className="text-gray-400 text-xs md:text-sm lg:text-base leading-relaxed border-l-2 border-purple-400 pl-4">
                             Full-stack developer focused on performance and scalability, crafting meaningful digital systems with modern web technologies to solve real-world problems.
