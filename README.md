@@ -63,9 +63,9 @@ npm run dev
 💼 [LinkedIn](https://www.linkedin.com/in/davanesh-saminathan/)
 🧠 [LeetCode](https://leetcode.com/u/davanesh)
 
-## ⭐ Support
+---
 
-If you like this project:
+## ⭐ If this inspires you, consider starring the repo!
 
 * ⭐ Star the repo
 * 🔗 Share it
