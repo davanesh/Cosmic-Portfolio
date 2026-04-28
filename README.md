@@ -1,9 +1,11 @@
 # 🌌 Cosmic Developer Portfolio
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=davanesh.Cosmic-Portfolio)
-
 🚀 **Live Website**  
-👉 https://davaneshportfolio.vercel.app
+<p align="center">
+  <a href="https://davaneshportfolio.vercel.app">
+    <img src="./assets/landing.png" alt="Portfolio Preview" width="100%" />
+  </a>
+</p>
 
 A futuristic, cosmic-themed developer portfolio designed to showcase real-world projects, modern technologies, and immersive user experiences.
 
@@ -73,3 +75,5 @@ If you like this project:
 ⭐ Star the repository
 🤝 Share feedback
 🚀 Connect with me
+
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=davanesh.Cosmic-Portfolio)
