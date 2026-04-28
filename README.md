@@ -1,60 +1,50 @@
 # 🌌 Cosmic Developer Portfolio
 
-🚀 **Live Website**  
 <p align="center">
   <a href="https://davaneshportfolio.vercel.app">
-    <img src="./assets/landing.png" alt="Portfolio Preview" width="100%" />
+    <img src="https://raw.githubusercontent.com/davanesh/Cosmic-Portfolio/main/src/assets/landing.png" alt="🚀 Live Portfolio" width="100%" />
   </a>
 </p>
 
-A futuristic, cosmic-themed developer portfolio designed to showcase real-world projects, modern technologies, and immersive user experiences.
-
-Built with performance, scalability, and clean UI/UX in mind.
-
----
-
-## ✨ Overview
-
-This portfolio represents my journey as a developer — from mastering fundamentals to building AI-powered systems, real-time applications, and immersive web experiences.
-
-Every animation, interaction, and design decision was crafted intentionally to create a smooth and engaging experience.
-
-> ⭐ For the best experience, view on a larger screen.
-
----
-
-## 🚀 Features
-
-- 🟣 Cosmic black & purple design theme
-- ⚡ Smooth animations & transitions
-- 📱 Fully responsive layout
-- 🧠 Real-world project showcase
-- 🎯 Performance optimized
-- 🎨 Glassmorphism & modern UI
-- 🔥 Interactive tech stack visualization
+<p align="center">
+  🚀 <b>Live:</b> https://davaneshportfolio.vercel.app <br/>
+  ⭐ Interactive • ⚡ Fast • 🎯 Production Ready
+</p>
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- React.js
-- Vite
-- Tailwind CSS
-- Three.js
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite)
+![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge\&logo=tailwind-css)
+![Three.js](https://img.shields.io/badge/Three.js-000?style=for-the-badge\&logo=three.js)
+![Vercel](https://img.shields.io/badge/Vercel-000?style=for-the-badge\&logo=vercel)
 
-### UI & Animations
-- Framer Motion
-- GSAP
+---
 
-### Deployment
-- Vercel (Global CDN)
+## ✨ Overview
+
+A futuristic, cosmic-themed developer portfolio built to showcase:
+
+* 🧠 Real-world projects
+* ⚡ High-performance UI
+* 🎨 Modern design systems
+* 🚀 Immersive web experiences
+
+---
+
+## 🚀 Features
+
+* 🟣 Cosmic black & purple UI
+* ⚡ Smooth animations (Framer Motion + GSAP)
+* 📱 Fully responsive
+* 🔥 Interactive 3D elements (Three.js)
+* 🎯 Optimized performance
 
 ---
 
 ## ⚙️ Run Locally
-
-Clone the project:
 
 ```bash
 git clone https://github.com/davanesh/Cosmic-Portfolio.git
@@ -63,17 +53,24 @@ npm install
 npm run dev
 ```
 
-## 👨‍💻 Author
-Davanesh Saminathan
+---
 
-🌐 Portfolio: https://davaneshportfolio.vercel.app
+## 👨‍💻 Author
+
+**Davanesh Saminathan**
+
+🌐 [Portfolio](https://davaneshportfolio.vercel.app)
+💼 [LinkedIn](https://www.linkedin.com/in/davanesh-saminathan/)
+🧠 [LeetCode](https://leetcode.com/u/davanesh)
 
 ## ⭐ Support
 
 If you like this project:
 
-⭐ Star the repository
-🤝 Share feedback
-🚀 Connect with me
+* ⭐ Star the repo
+* 🔗 Share it
+* 🤝 Connect with me
+
+---
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=davanesh.Cosmic-Portfolio)
