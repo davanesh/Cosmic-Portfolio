@@ -1,4 +1,4 @@
-# 🌌 Cosmic Developer Portfolio
+# 🌌 Developer Portfolio
 
 <p align="center">
   <a href="https://davaneshportfolio.vercel.app">
